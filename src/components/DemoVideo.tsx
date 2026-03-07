@@ -1,5 +1,3 @@
-import { Play } from 'lucide-react';
-
 export default function DemoVideo() {
   return (
     <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
@@ -18,21 +16,16 @@ export default function DemoVideo() {
         <div className="relative max-w-4xl mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 rounded-2xl sm:rounded-3xl blur-2xl"></div>
 
-          <div className="relative group cursor-pointer">
-            <div className="relative bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/20 overflow-hidden aspect-video flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-violet-500/10"></div>
-
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-full blur-xl sm:blur-2xl opacity-50 animate-pulse"></div>
-                  <button className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-4 sm:p-6 hover:bg-white/20 transition-all group-hover:scale-110 transform">
-                    <Play className="w-8 h-8 sm:w-12 sm:h-12 text-white fill-white" />
-                  </button>
-                </div>
-              </div>
-
-              <div className="absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            </div>
+          <div className="relative rounded-2xl sm:rounded-3xl border border-white/20 overflow-hidden">
+            <video
+              className="w-full aspect-video"
+              controls
+              playsInline
+              preload="metadata"
+            >
+              <source src="/zyqora.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
