@@ -134,17 +134,17 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            <a href="#download" className="group relative px-6 sm:px-8 py-3 sm:py-4 rounded-lg overflow-hidden animate-glow-pulse">
+            <a href="#download" className="group relative px-8 sm:px-12 py-4 sm:py-5 rounded-xl overflow-hidden animate-glow-pulse flex-1 sm:flex-none sm:min-w-[300px]">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <div className="relative flex items-center justify-center gap-2 text-white font-semibold">
+              <div className="relative flex items-center justify-center gap-2 text-white font-semibold text-base sm:text-lg">
                 Download Software
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </div>
             </a>
 
-            <a href="#pricing" className="group px-6 sm:px-8 py-3 sm:py-4 rounded-lg border border-white/20 hover:border-cyan-400/50 transition-all bg-white/5 backdrop-blur-sm hover:bg-white/10">
-              <span className="text-white font-semibold">View Pricing</span>
+            <a href="#pricing" className="group px-8 sm:px-12 py-4 sm:py-5 rounded-xl border border-white/30 hover:border-white/50 transition-all bg-transparent hover:bg-white/5 flex-1 sm:flex-none sm:min-w-[200px] flex items-center justify-center">
+              <span className="text-white font-semibold text-base sm:text-lg">View Pricing</span>
             </a>
           </div>
         </div>

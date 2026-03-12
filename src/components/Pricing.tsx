@@ -125,7 +125,7 @@ export default function Pricing() {
                   ))}
                 </ul>
 
-                <a href="#download" className={`w-full py-3 rounded-lg font-semibold transition-all text-center block ${
+                <a href="#download" className={`inline-block py-3 px-8 rounded-lg font-semibold transition-all text-center ${
                   plan.popular
                     ? 'bg-gradient-to-r from-cyan-500 to-violet-500 text-white hover:opacity-90'
                     : 'bg-white/10 text-white border border-white/20 hover:bg-white/20'
