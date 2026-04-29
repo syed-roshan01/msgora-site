@@ -6,10 +6,10 @@ export default function DemoVideo() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-4">
-            See Zyqora in Action
+            See Msgora in Action
           </h2>
           <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-            Watch how Zyqora helps businesses automate WhatsApp messaging in minutes.
+            Watch how Msgora helps businesses automate WhatsApp messaging in minutes.
           </p>
         </div>
 

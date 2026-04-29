@@ -24,7 +24,7 @@ function Counter({ end, duration = 2000, suffix = '' }: { end: number; duration?
   }, [end, duration]);
 
   return (
-    <span className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
+    <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-emerald-400">
       {count.toLocaleString()}{suffix}
     </span>
   );
@@ -33,7 +33,7 @@ function Counter({ end, duration = 2000, suffix = '' }: { end: number; duration?
 export default function TrustSection() {
   return (
     <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-violet-950/10 to-black"></div>
+      <div className="absolute inset-0 bg-black"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
@@ -44,25 +44,25 @@ export default function TrustSection() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 text-center hover:border-cyan-400/50 transition-colors">
-              <Counter end={500000} suffix="+" />
+            <div className="absolute inset-0 bg-emerald-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative bg-white/[0.04] backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/[0.08] p-6 sm:p-8 text-center hover:border-emerald-400/40 transition-colors">
+              <Counter end={50000} suffix="+" />
               <p className="mt-2 sm:mt-3 text-gray-400 text-sm sm:text-base md:text-lg">Campaigns Sent</p>
             </div>
           </div>
 
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 text-center hover:border-violet-400/50 transition-colors">
-              <Counter end={10000} suffix="+" />
+            <div className="absolute inset-0 bg-emerald-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative bg-white/[0.04] backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/[0.08] p-6 sm:p-8 text-center hover:border-emerald-400/40 transition-colors">
+              <Counter end={2000} suffix="+" />
               <p className="mt-2 sm:mt-3 text-gray-400 text-sm sm:text-base md:text-lg">Connected Devices</p>
             </div>
           </div>
 
           <div className="relative group sm:col-span-2 md:col-span-1">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 text-center hover:border-blue-400/50 transition-colors">
-              <Counter end={50000000} suffix="+" />
+            <div className="absolute inset-0 bg-emerald-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative bg-white/[0.04] backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/[0.08] p-6 sm:p-8 text-center hover:border-emerald-400/40 transition-colors">
+              <Counter end={5000000} suffix="+" />
               <p className="mt-2 sm:mt-3 text-gray-400 text-sm sm:text-base md:text-lg">Messages Delivered</p>
             </div>
           </div>

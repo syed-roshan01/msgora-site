@@ -13,11 +13,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-3">
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center group">
-            <img
-              src="/zyqora-logo-.png"
-              alt="Zyqora"
-              className="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105"
-            />
+            <span className="text-2xl font-bold text-white tracking-tight group-hover:text-emerald-400 transition-colors">
+              Ms<span className="text-emerald-400 group-hover:text-white transition-colors">qora</span>
+            </span>
           </a>
 
           {/* Desktop Menu */}
@@ -29,8 +27,7 @@ export default function Navbar() {
             <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
 
             <a href="#download" className="relative group px-4 lg:px-6 py-2.5 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-violet-500 opacity-100 group-hover:opacity-90 transition-opacity"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-violet-500 blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
+              <div className="absolute inset-0 bg-emerald-500 rounded-lg"></div>
               <span className="relative text-white font-semibold text-sm lg:text-base">Download Software</span>
             </a>
           </div>
@@ -93,8 +90,7 @@ export default function Navbar() {
               onClick={handleLinkClick}
               className="relative group px-6 py-3 rounded-lg overflow-hidden mt-2"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-violet-500"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-violet-500 blur-lg opacity-50"></div>
+              <div className="absolute inset-0 bg-emerald-500 rounded-lg"></div>
               <span className="relative text-white font-semibold text-center block">Download Software</span>
             </a>
           </div>

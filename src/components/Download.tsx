@@ -3,8 +3,8 @@ import { Download as DownloadIcon, Apple, X, MessageCircle } from 'lucide-react'
 
 function LicensePopup({ onClose }: { onClose: () => void }) {
   const handleWhatsApp = () => {
-    const phoneNumber = '919217758442';
-    const message = 'Hi, I just downloaded Zyqora and need help with my license key!';
+    const phoneNumber = '9109636553';
+    const message = 'Hi, I just downloaded Msgora and need help with my license key!';
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -19,13 +19,13 @@ function LicensePopup({ onClose }: { onClose: () => void }) {
       {/* Modal */}
       <div className="relative w-full max-w-md bg-gradient-to-b from-gray-900 to-black border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
         {/* Top glow */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
 
         {/* Header */}
         <div className="flex items-center justify-between px-6 pt-6 pb-4">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-violet-500/20 border border-white/10">
-              <DownloadIcon className="w-5 h-5 text-cyan-400" />
+            <div className="p-2 rounded-lg bg-emerald-500/10 border border-white/10">
+              <DownloadIcon className="w-5 h-5 text-emerald-400" />
             </div>
             <h3 className="text-lg font-bold text-white">Download Started!</h3>
           </div>
@@ -41,11 +41,11 @@ function LicensePopup({ onClose }: { onClose: () => void }) {
         <div className="px-6 pb-6 space-y-5">
           <ul className="space-y-3">
             {[
-              { step: '1', color: 'from-cyan-500 to-blue-500', text: 'Install Zyqora on your Windows PC.' },
-              { step: '2', color: 'from-violet-500 to-purple-500', text: 'Open the app — it will show you a unique Device ID.' },
-              { step: '3', color: 'from-cyan-500 to-violet-500', text: 'Complete your purchase and share the Device ID with our support team.' },
-              { step: '4', color: 'from-green-500 to-emerald-500', text: 'We\'ll generate your License Key based on your plan and device limit.' },
-              { step: '5', color: 'from-yellow-500 to-orange-500', text: 'Activate the key — your license stays valid for the selected duration.' },
+              { step: '1', color: 'from-emerald-500 to-teal-500', text: 'Install Msgora on your Windows PC.' },
+              { step: '2', color: 'from-teal-500 to-emerald-500', text: 'Open the app — it will show you a unique Device ID.' },
+              { step: '3', color: 'from-emerald-500 to-teal-500', text: 'Complete your purchase and share the Device ID with our support team.' },
+              { step: '4', color: 'from-teal-500 to-emerald-500', text: 'We\'ll generate your License Key based on your plan and device limit.' },
+              { step: '5', color: 'from-emerald-500 to-teal-500', text: 'Activate the key — your license stays valid for the selected duration.' },
             ].map(({ step, color, text }) => (
               <li key={step} className="flex items-start gap-3">
                 <span className={`shrink-0 w-6 h-6 rounded-full bg-gradient-to-r ${color} flex items-center justify-center text-white text-xs font-bold`}>
@@ -57,7 +57,7 @@ function LicensePopup({ onClose }: { onClose: () => void }) {
           </ul>
 
           <div className="rounded-xl bg-white/5 border border-white/10 p-3 flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-cyan-400 shrink-0" />
+            <div className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
             <p className="text-gray-400 text-xs">Connect on WhatsApp to share your Device ID and get your key instantly.</p>
           </div>
 
@@ -89,8 +89,8 @@ export default function Download() {
 
   const handleWindowsDownload = () => {
     const link = document.createElement('a');
-    link.href = 'https://github.com/syed-roshan01/zyqora-site/releases/download/v1.0.1/Zyqora.Setup.1.0.1.exe';
-    link.download = 'Zyqora Setup 1.0.1.exe';
+    link.href = 'https://github.com/syed-roshan01/msgora-site/releases/download/v1.0.1/Msgora.Setup.1.0.0.exe';
+    link.download = 'Msgora Setup 1.0.1.exe';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -102,15 +102,15 @@ export default function Download() {
       {showPopup && <LicensePopup onClose={() => setShowPopup(false)} />}
 
       <section id="download" className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-violet-950/10 to-black"></div>
+        <div className="absolute inset-0 bg-black"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 px-4">
-              Download Zyqora
+              Download Msgora
             </h2>
             <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-              Download Zyqora software and start automating your WhatsApp campaigns instantly.
+              Download Msgora software and start automating your WhatsApp campaigns instantly.
             </p>
           </div>
 
@@ -119,8 +119,8 @@ export default function Download() {
               onClick={handleWindowsDownload}
               className="group relative px-8 sm:px-10 py-4 sm:py-5 rounded-xl overflow-hidden flex-1 sm:min-w-[240px]"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity animate-pulse"></div>
+              <div className="absolute inset-0 bg-emerald-500 rounded-xl"></div>
+              <div className="absolute inset-0 bg-emerald-500 blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
               <div className="relative flex items-center justify-center gap-3 text-white">
                 <DownloadIcon className="w-5 h-5 sm:w-6 sm:h-6" />
                 <div className="text-left">
@@ -131,8 +131,8 @@ export default function Download() {
             </button>
 
             <button className="group relative px-8 sm:px-10 py-4 sm:py-5 rounded-xl overflow-hidden flex-1 sm:min-w-[240px]">
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-purple-500"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-500 to-purple-500 blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+              <div className="absolute inset-0 bg-zinc-700 rounded-xl"></div>
+              <div className="absolute inset-0 bg-zinc-600 blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
               <div className="relative flex items-center justify-center gap-3 text-white">
                 <Apple className="w-5 h-5 sm:w-6 sm:h-6" />
                 <div className="text-left">

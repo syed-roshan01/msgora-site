@@ -2,7 +2,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustSection from './components/TrustSection';
 import Features from './components/Features';
-import DemoVideo from './components/DemoVideo';
 import Reviews from './components/Reviews';
 import Pricing from './components/Pricing';
 import Download from './components/Download';
@@ -17,7 +16,6 @@ function App() {
       <Hero />
       <TrustSection />
       <Features />
-      <DemoVideo />
       <Reviews />
       <Pricing />
       <Download />

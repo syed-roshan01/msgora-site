@@ -1,7 +1,7 @@
 export default function FloatingWhatsApp() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '919217758442';
-    const message = 'Hi, I am interested in Zyqora!';
+    const phoneNumber = '9109636553';
+    const message = 'Hi, I am interested in Msgora!';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
