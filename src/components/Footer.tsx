@@ -78,7 +78,7 @@ export default function Footer() {
                   <p className="text-gray-400 text-sm">Office</p>
                   <p className="text-white text-sm leading-relaxed">
                     100 Feet Rd, HAL 2nd Stage,<br />
-                    Indiranagar, Bengaluru,<br />
+                    MP Nagar, Bhopal,<br />
                     Karnataka 560038
                   </p>
                 </div>
