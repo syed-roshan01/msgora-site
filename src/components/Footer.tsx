@@ -53,10 +53,10 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
                   <a
-                    href="mailto:Digirajproofficial@gmail.com"
+                    href="mailto:Msgoradotin@gmail.com"
                     className="text-white hover:text-emerald-400 transition-colors"
                   >
-                    Digirajproofficial@gmail.com
+                    Msgoradotin@gmail.com
                   </a>
                 </div>
               </li>
@@ -65,10 +65,10 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
                   <a
-                    href="tel:+9109636553"
+                    href="tel:+919183381906"
                     className="text-white hover:text-emerald-400 transition-colors"
                   >
-                    +91 92177 58442
+                    +91 91833 81906
                   </a>
                 </div>
               </li>
